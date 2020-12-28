@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Texturina&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+	 scroll-behavior: smooth;
+}
+
+#header {
+	height: 500px;
+}
+
+#header::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 652px;
+	width: 100%;
+	background: url('img/port.jpg');
+	background-size: cover;
+	background-position: center center;
+	z-index: -1;
+	opacity: 0.3;
+}
+
+
+.header_intro {
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+.intro {
+	width: 60%;
+	margin: 120px auto;
+	text-align: center;
+	color: white
+}
+
+.intro h1 {
+	font-size: 8rem;
+	margin-top: 15rem;
+	color: #203647;
+}
+
+.intro p {
+	margin-top: 8.5rem;
+	line-height: 3rem;
+	font-size: 2rem;
+	color:  #3a4660;
+}
+
+.icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon a{
+	color:  #202020;
+}
+
+.fa {
+	padding-left: 2.8rem;
+}
+
+#container {
+	width: 100%;
+	margin: auto;
+	text-align: center
+}
+
+.basic_info {
+	font-size: 1.8rem;
+	line-height: 2.5rem;
+	padding: 3rem;
+	position: relative;
+}
+
+.basic_info::before{
+	content: "";
+	background: url('img/bg_white.jpg');
+	background-size: cover;
+	background-position: center center;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	opacity: 0.8;
+}
+
+.profile_bio p {
+	margin-top: 1.5rem;
+	text-align: left;
+	color: #203647;
+	opacity: 0.85;
+	font-family: 'Baloo Bhai 2', cursive;
+}
+.profile_bio a{
+	text-decoration: none;
+	font-family: 'Baloo Bhai 2', cursive;
+}
+.profile_bio span{
+ opacity: 1;
+}
+.profile {
+	display: flex;
+	justify-content: space-around;
+	margin: 3rem 6rem;
+}
+
+.profile_pic img {
+	height: 220px;
+	width: 200px;
+	border: 1px solid grey;
+	border-radius: 500px;
+	
+	margin-top: 2rem;
+}
+
+.basic_info h3 {
+	position: relative;
+	color: #203647;
+}
+
+
+.skill_info {
+	background-color: #212121;
+	color: white;
+	font-size: 1.8rem;
+	line-height: 2.5rem;
+	padding: 3rem;
+}
+
+.skill_content {
+	margin: 5rem 0rem;
+}
+.skill_content p{
+	font-family: 'Baloo Bhai 2', cursive;
+}
+
+.skill_info h3 {
+	position: relative;
+	margin-bottom: 3rem;
+	font-family: 'Baloo Bhai 2', cursive;
+}
+
+.skill_info h3::after {
+	content: '';
+	position: absolute;
+	width: 6.5%;
+	height: 3px;
+	left: 46.9%;
+	bottom: -20%;
+	background-color: #26a69a;
+
+}
+
+/* Progress bar */
+.container {
+	background-color: rgb(192, 192, 192);
+	width: 80%;
+	margin: auto;
+	margin-top: 0.5rem;
+	margin-bottom: 2rem;
+	height: 2rem;
+	font-family: 'Baloo Bhai 2', cursive;
+}
+
+.skill {
+	background-color: #283747;
+	color: white;
+	padding: 1%;
+	text-align: right;
+	font-size: 20px;
+	height: 2rem;
+}
+
+.html {
+	width: 66%;
+}
+
+.css {
+	width: 70%;
+}
+
+.javascript {
+	width: 75%;
+}
+
+.c-plus {
+	width: 80%;
+}
+
+.react {
+	width: 80%;
+}
+
+.php {
+	width: 75%;
+}
+.express{
+	width: 60%;
+}
+.sql{
+	width: 50%;
+}
+.mongodb{
+	width: 55%;
+}
+
+/* progress bar end */
+
+
+.education_info {
+	font-size: 1.8rem;
+	line-height: 2.5rem;
+	padding: 3rem;
+	background-color: #DCE1E3;
+}
+
+.education_info h3 {
+	margin: 2rem 0px;
+	text-align: center;
+	position: relative;
+}
+
+.education_info h3::after {
+	content: "";
+	position: absolute;
+	width: 10.3%;
+	height: 3px;
+	left: 44.9%;
+	bottom: -20%;
+	background-color: #26a69a;
+}
+
+.container_education {
+	display: flex;
+}
+
+.graduation, .intermidiate, .high_school {
+	line-height: 2.7rem;
+	width: 36rem;
+	height: 35rem;
+	margin: auto;
+	background-color: #212121;
+	color: white;
+	padding: 1.5rem 1rem;
+	text-align: center;
+	box-shadow: 0 4px 10px 3px rgba(0,0,0,0.6);
+	transition: transform 420ms;
+	
+}
+
+.graduation:hover, .intermidiate:hover, .high_school:hover{
+	transform: scale(1.02);
+}
+.graduation {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.intermidiate {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.high_school {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+
+}
+
+.heading1 {
+	font-weight: 700;
+}
+
+.heading2 {
+	font-weight: 500;
+	font-size: 2rem;
+	font-family: 'Baloo Bhai 2', cursive;
+}
+
+.content p {
+	font-size: 1.8rem;
+	font-weight: 500;
+font-family: 'Texturina', serif;
+}
+
+.content {
+	margin-top: 2rem;
+	padding: 1rem 1.5rem;
+}
+
+.content-mg {
+	margin-top: 3rem;
+}
+
+hr {
+	margin-top: 0.7rem;
+}
+
+/*.small {
+	font-size: 1.6rem !important;
+}*/
+
+/* Project Section */
+.project_container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5rem 0px;
+	background-color: #FFFFFF;
+	font-family: 'Baloo Bhai 2', cursive;
+}
+
+.project_container h1{
+	font-size: 2.5rem;
+	position: relative;
+	margin-bottom: 2rem;
+}
+.project_container h1::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	left: 0%;
+	bottom: -20%;
+	background-color: #26a69a; 
+}
+.project{
+	width: 70%;
+	margin: 1rem 1rem;
+	padding: 1rem 1rem;
+}
+.project .tool{
+	color: #3C403D;
+	margin-top: 0.9rem;
+	font-size: 1.8rem;
+}
+
+.title{
+	font-size: 1.8rem;
+}
+ .desc{
+ 	color:  #202020;
+ 	font-size: 1.6rem;
+ 	margin-top: 0.7rem;
+ 	font-weight: 300;
+ }
+
+ /* footer section */
+
+footer{
+	text-align: center;
+	background-color: #212121;
+	padding: 2px;
+}
+footer p{
+	font-size: 1.4rem;
+	letter-spacing: 0.05rem;
+	color: white;
+	font-family: 'Baloo Bhai 2', cursive;
+}
+footer span{
+	font-family: 'Baloo Bhai 2', cursive;	
+}
+
+.footer_icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2.5rem 0rem;
+	margin-right: 2rem;
+}
+
+.footer_icon a{
+	color:  #FFFFFF;
+}
+
+.footer_icon .fa {
+	padding-left: 2.8rem;
+}
+
+	/* footer end */
+
+
+@media (max-width:1150px) {
+	html {
+		font-size: 58%;
+	}
+
+	.graduation, .intermidiate, .high_school {
+		width: 30rem;
+		height: 36rem;
+	}
+
+}
+
+@media(max-width:950px) {
+	html {
+		font-size: 56%;
+	}
+
+	.graduation, .intermidiate, .high_school {
+		width: 26rem;
+		height: 36rem;
+	}
+
+}
+
+@media(max-width:818px) {
+	.container_education {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.graduation, .intermidiate, .high_school {
+		width: 50rem;
+		height: 30rem;
+	}
+
+	.intro {
+		width: 70%;
+	}
+
+	.intro h1 {
+		font-size: 6rem;
+		margin-top: 7rem;
+	}
+
+
+.intro p {
+	margin-top: 4rem;
+}
+
+}
+
+@media(max-width:474px) {
+	.graduation, .intermidiate, .high_school {
+		width: 40rem;
+		height: 30rem;
+		padding: 1.5rem 0.5rem;
+	}
+
+	.intro h1 {
+		font-size: 5rem;
+		margin-top: 4rem;
+	}
+	.intro p{
+		font-size: 1.8rem;
+	}
+	.profile{
+		margin: 3rem 1rem;
+	}
+	.intro {
+		width: 80%;
+		height: 220px;
+		margin: 120px auto;
+		text-align: center;
+	}
+	.skill_info h3::after {
+		width: 16%;
+		height: 3px;
+		left: 42.2%;
+	}
+
+	.education_info h3::after {
+		width: 30%;
+		left: 35.5%;
+	}
+}
+
+@media(max-width:634px) {
+	.profile {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.profile_bio p {
+		margin-top: 1.5rem;
+		text-align: center;
+	}
+
+}
+
+@media(max-width:396px) {
+	.graduation, .intermidiate, .high_school {
+		width: 30rem;
+		height: 36rem;
+	}
+	.project{
+		width: 80%;
+	}
+}
+
+@media(max-width: 320px){
+	.icon {
+		margin-top: 20rem;
+	}
+	.graduation, .intermidiate, .high_school {
+		width: 25rem;
+		height: 38rem;
+		padding: 1.5rem 0.2rem;
+	}
+
+}
+
+@media(max-width: 292px){
+	.icon {
+		margin-top: 25rem;
+	}
+	.graduation, .intermidiate, .high_school {
+		width: 24rem;
+		height: 38rem;
+	}
+	.education_info{
+		padding: 1.5rem;
+	}
+}
+
+
+@media(max-width:270px) {
+	.project{
+		width: 90%;
+	}
+	.profile{
+		margin: 3rem 0rem;
+	}
+}
